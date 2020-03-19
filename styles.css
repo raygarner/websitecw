@@ -1,0 +1,235 @@
+body {
+    text-align: left;
+    //color: Black;
+    background-color: White;
+    padding-left: 370px; /*sidebar width + sidebar padding * 2  */
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 400%;
+}
+
+h1, h2, h3 {
+    font-family: serif;
+
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 85%
+}
+
+.sidenavl {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 10px;
+    font-style: italic;
+    /* font-family: monospace; */
+    line-height: 1.75;
+    background-image:url("img/lillypond.jpg");
+}
+
+.contents {
+    list-style-type: none;
+    padding-top: 0px;
+    padding-left: 20px;
+    font-family: serif;
+}
+
+.contents a {
+    color: White;
+}
+
+.contents a:link {
+    text-decoration: none;
+}
+
+.contents a:hover {
+    text-decoration: underline;
+}
+
+.sidenavl h2 {
+    color: White;
+    line-height:0;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.sidenavl hr {
+    color: White;
+    margin-top: 20px;
+}
+
+.formButtons {
+    text-align: center;
+}
+
+.btnTheme {
+    //border-right: 10px solid rgb(60, 179, 113);
+    //border-left: 10px solid rgb(60, 179, 113);
+    //border-bottom: none;
+    //border-top: none;
+    border: none;
+    //background-color: MediumSeaGreen;
+    background: rgba(60, 179, 113, 0.5);
+    font-family: sans-serif;
+    font-size: 100%;
+    /* letter-spacing: 1px; */
+    word-spacing: 2px;
+    line-height: 3;
+    width: 200px;
+    /* float: center; */
+    color: Black;
+    font-family: monospace;
+    display: inline-block;
+    transition-duration: 0.1s;
+}
+
+.btnTheme:hover {
+    //opacity: 1;
+    background: rgb(60, 179, 133);
+}
+
+.btnForm1, .btnForm2, .btnForm3 {
+    //border-right: 10px solid ForestGreen;
+    //border-left: 10px solid ForestGreen;
+    border-bottom: none;
+    border-top: none;
+    //background-color: MediumSeaGreen;
+    font-size: 100%;
+    /* letter-spacing: 1px; */
+    word-spacing: 2px;
+    line-height: 3;
+    width: 200px;
+    /* float: center; */
+    //color: Black;
+    font-family: monospace;
+    display: inline-block;
+    transition-duration: 0.1s;
+}
+
+.btnForm1 {
+    border-right: 10px solid rgb(220, 20, 60);
+    border-left: 10px solid rgb(220, 20, 60);
+    background: rgba(220, 20, 60, 0.5);
+}
+
+.btnForm1:hover {
+    background: rgb(220, 20, 60);
+}
+
+.btnForm2 {
+    border-right: 10px solid rgb(60, 179, 113);
+    border-left: 10px solid rgb(60, 179, 113);
+    background: rgba(60, 179, 113, 0.7);
+}
+
+.btnForm2:hover {
+    background: rgb(60, 179, 113);
+}
+
+.btnForm3 {
+    border-right: 10px solid rgb(0, 191, 255);
+    border-left: 10px solid rgb(0, 191, 255);
+    background: rgba(0,191, 255, 0.5);
+}
+
+.btnForm3:hover {
+    background: rgb(0, 191,255);
+}
+
+.themeDiv {
+    bottom: 0;
+    padding-bottom: 60px;
+    /* padding-left:40px;*/
+    /*padding-right:30px;*/
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+}
+
+.btnTest {
+    text-align: center;
+}
+
+.bjork {
+    opacity: 0.95;
+}
+
+.footer {
+    text-align: center;
+}
+
+#firstForm {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-right: 10px solid rgba(220, 20, 60, 0.5);
+    border-left: 10px solid rgba(220, 20, 60, 0.5);
+    display: none;
+    //background-color: LightPink;
+    background: rgba(220, 20, 60, 0.5);
+    text-align: center;
+}
+
+#secondForm {
+    //opacity: 0.5;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-right: 10px solid rgba(60, 179, 113, 0.5);
+    border-left: 10px solid rgba(60, 179, 113, 0.5);
+    display: none;
+    background: rgba(60, 179, 113, 0.5);
+    text-align: center
+}
+
+#thirdForm {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-right: 10px solid rgba(0, 191, 255, 0.5);
+    border-left: 10px solid rgba(0, 191, 255, 0.5);
+    display: none;
+    background: rgba(0, 191, 255, 0.5);
+    text-align: center;
+}
+
+
+input[type=text] {
+    border: none;
+    //background-color: AliceBlue;
+    background: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid Black;
+    width: 350px;
+
+}
+
+input[type=submit] {
+
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 15px;
+    font-family: monospace;
+    transition-duration: 0.1s;
+}
+
+input[type=submit]:hover {
+    background: rgb(255, 255, 255);
+
+}
+
+form {
+    padding: 20px;
+}
+
+img {
+    transition-duration: 1s;
+}

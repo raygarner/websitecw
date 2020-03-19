@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>psyrg4 interfaces coursework</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body id="body">
+
+        <div class="sidenavl">
+            <h2>Contents</h2>
+            <hr>
+            <ul class="contents">
+                <li><a href="#MainHeading">Main Heading</a></li>
+                <li><a href="#context">Context</a></li>
+                <li><a href="#form">Form Demo</a></li>
+            </ul>
+
+            <div class="themeDiv">
+                <button class="btnTheme" onClick="bgCol()">Toggle theme</button>
+            </div>
+        </div>
+
+        <h1 id="MainHeading">Film Database Interface</h2>
+        <hr>
+
+
+        <h2 id="context">Context</h1>
+        <p>This is a web front end used to interact with a database for films and film metadata. It was created by Ray Garner (psyrg4) for the <b>DBI</b> module on Computer Science at the <a href="https://www.nottingham.ac.uk">University of Nottingham</a>.</p>
+
+
+        <h2 id="form">Forms:</h3>
+
+        <div class="formButtons">
+            <button class="btnForm1" onclick=selectForm("firstForm")>Search film/actor</button>
+
+
+            <button class="btnForm2" onclick=selectForm("secondForm")>Add film/actor</button>
+
+            <button class="btnForm3" onclick=selectForm("thirdForm")>Delete film/actor</button>
+        </div>
+
+
+        <div id="firstForm" class="firstForm">
+            <form id="searchFilm" name="searchFilm" action="searchMovie.php" onsubmit="return validate(this)" method="get">
+                <label for="title">Film Name:</label>
+                <input id="title" type="text" name="title">
+                <input type="submit" value="Search for film"></button>
+            </form>
+
+            <form id="searchActor" name="searchActor" action="searchActor.php" onsubmit="return validate(this)" method="get">
+                <label for="name">Actor Name:</label>
+                <input id="name" type="text" name="name">
+                <input type="submit" value="Search for actor"></button>
+
+            </form>
+
+        </div>
+
+
+        <div id="secondForm" class="secondForm">
+            <form id="addFilm" name="addFilm" action="addMovie.php" onsubmit="return validate(this)" method="get">
+                <label for="title">Film Name:</label>
+                <input id="title" type="text" name="title"><br><br>
+                <label for"name">Actor Name:</label>
+                <input id="name" type="text" name="name"><br><br>
+                <input type="submit" value="Add film"></button>
+            </form>
+
+            <form id="addActor" name="addActor" action="addActor.php" onsubmit="return validate(this)" method="get">
+                <label for="name">Add New Actor:</label>
+                <input id="name" type="text" name="name"><br><br>
+                <input type="submit" value="Add actor"></button>
+            </form>
+
+        </div>
+
+        <div id="thirdForm" class="thirdForm">
+            <form id="deleteFilm" name="deleteFilm" action="deleteMovie.php" onsubmit="return validate(this)" method="get">
+                <label for="title">Film title:</label>
+                <input id="title" type="text" name="title">
+                <input type="submit" value="Delete film"></button>
+            </form>
+
+            <form id="deleteActor" name="deleteActor" action="deleteActor.php" onsubmit="return validate(this)" method="get">
+                <label for="name">Actor name:</label>
+                <input id="name" type="text" name="name">
+                <input type="submit" value="Delete actor"></button>
+            </form>
+
+        </div>
+
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="footer">
+        <address>
+            Written by Ray Garner<br>
+            Email: psyrg4@nottingham.ac.uk<br>
+            University of Nottingham<br>
+        </address>
+        <br>
+
+            <img class="bjork" src="img/bjork.jpeg" style="width:236px;height:177px;" onmouseover="this.src='img/yorke.jpg';" onmouseout="this.src='img/bjork.jpeg';"/>
+        </div>
+
+    </body>
+</html>
+
