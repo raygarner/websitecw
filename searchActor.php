@@ -20,7 +20,7 @@ echo $actorsearch;
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 if ($conn->connect_errno)  die("failed to connect to database\n</body>\n</html>");
 
-$sql="SELECT actName FROM Actor WHERE actName='$actorsearch'";
+$sql="SELECT actName FROM Actor WHERE actName LIKE '%$actorsearch%'";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $stmt->bind_result($Name);
