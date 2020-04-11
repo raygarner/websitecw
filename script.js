@@ -74,7 +74,7 @@ function validate(form) {
     var ok=1
     var msg=""
 
-    alert("validate called");
+    //alert("validate called");
 
 	for (var i = 0; i < form.length; i++) {
 		if (form.elements[i].value.trim() == "") {
