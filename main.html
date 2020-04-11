@@ -60,11 +60,25 @@
 
 
         <div id="secondForm" class="secondForm">
-            <form id="addFilm" name="addFilm" action="addMovie.php" onsubmit="return validate(this)" method="get">
+            <form id="addFilm" name="addFilm" action="addMovie.php" onsubmit="return validateNewFilm(this)" method="get">
                 <label for="title">Film Name:</label>
                 <input id="title" type="text" name="title"><br><br>
-                <label for"name">Actor Name:</label>
+
+                <label for="name">Actor Name:</label>
                 <input id="name" type="text" name="name"><br><br>
+
+                <label for="price">Price:</label>
+                <input id="price" type="text" name="price"><br><br>
+
+                <label for="year">Year:</label>
+                <input id="year" type="text" name="year"><br><br>
+
+                <label for="genre">Genre:</label>
+                <input id="genre" type="text" name="genre"><br><br>
+
+                <label for="scenes">Number of scenes:</label>
+                <input id="scenes" type="text" name="scenes"><br><br>
+
                 <input type="submit" value="Add film"></button>
             </form>
 
